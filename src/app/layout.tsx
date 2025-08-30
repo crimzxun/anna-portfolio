@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Pixelify_Sans, Poppins, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/_components/navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -9,6 +10,27 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
+const pixelifySans = Pixelify_Sans({
+  variable: "--font-pixelify-sans",
+  subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["200", "300", "400"],
+});
+
+const sourceCodePro = Source_Code_Pro({
+  variable: "--font-source-code-pro",
   subsets: ["latin"],
 });
 
@@ -25,8 +47,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} 
+                    ${montserrat.variable} ${pixelifySans.variable} 
+                    ${poppins.variable} ${sourceCodePro.variable} 
+                    antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
