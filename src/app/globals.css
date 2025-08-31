@@ -20,7 +20,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-montserrat: var(--font-montserrat);
   --font-pixel: var(--font-pixelify-sans);
   --font-poppins: var(--font-poppins);
   --font-source-code: var(--font-source-code-pro);
@@ -34,8 +33,8 @@
 } 
 .typing-stars {
   display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
+  overflow: hidden;     /* hides the part not yet "typed" */
+  white-space: nowrap;  /* keep all on one line */
   animation: typing 10s steps(30) infinite; /* steps= num of chars */
 }
 

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat, Pixelify_Sans, Poppins, Source_Code_Pro } from "next/font/google";
+import { Geist, Geist_Mono, Pixelify_Sans, Poppins, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/_components/navbar";
+import Footer from "@/_components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,11 +11,6 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -46,14 +42,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* 
+        - min-h-screen: at least viewport height 
+        - flex flex-col: stack navbar/main/footer vertically 
+      */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} 
-                    ${montserrat.variable} ${pixelifySans.variable} 
-                    ${poppins.variable} ${sourceCodePro.variable} 
-                    antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} ${poppins.variable} ${sourceCodePro.variable} antialiased min-h-screen flex flex-col`}
       >
         <Navbar />
-        {children}
+
+        {/*
+          - flex-grow: expand to fill the remaining space between navbar + footer
+        */}
+        <main className="flex-grow">{children}</main>
+        
+        <Footer />
       </body>
     </html>
   );
