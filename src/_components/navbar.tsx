@@ -1,13 +1,13 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 
 const navLinks = [
-    { label: "Home", href: "/"},
-    { label: "About", href: "/about"},
-    { label: "Experience", href: "/experience"},
-    { label: "Projects", href: "/projects"},
-    { label: "Skills", href: "/skills"},        
+    { href: "/about", label: "About" },
+    { href: "/experience", label: "Experience" },
+    { href: "/projects", label: "Projects" },
+    { href: "/skills", label: "Skills" },
 ];
 
 // shared links renderer
@@ -18,6 +18,7 @@ function NavLinks({ onClick }: { onClick?: () => void }) {
                 <li key={link.label}>
                     <Link
                         href={link.href}
+                        onClick={onClick}
                         className="px-3 py-1 text-xl lg:text-2xl hover:text-sky-300 hover:underline underline-offset-4 hover:scale-105 transition-transform duration-200"
                     >
                         {link.label.toUpperCase()}
@@ -34,10 +35,10 @@ export default function Navbar() {
     return (
         <header className="p-5">
             {/* desktop nav */}
-            <nav id="desktop-nav" className="flex justify-between items-center">
-                <div className="font-pixel font-bold text-3xl md:text-4xl lg:text-5xl">
+            <nav id="desktop-nav" className="font-pixel flex justify-between items-center">
+                <Link href="/" className="font-bold text-3xl md:text-4xl lg:text-5xl hover:opacity-80 hover:scale-110 transition">
                     Anna Zheng
-                </div>
+                </Link>
                 <ul className="hidden md:flex lg:space-x-6">
                     <NavLinks />
                 </ul>
