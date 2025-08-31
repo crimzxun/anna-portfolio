@@ -11,10 +11,10 @@ type FooterLinkProps = {
 function FooterLink({ href, icon: Icon, label}: FooterLinkProps) {
     return (
         <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
             href={href}
             target="_blank"
             rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
         >
             <Icon className="text-lg text-[#666666]" />
             {label}

@@ -1,17 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
+import { navLinks } from "@/_data/navbar";
 
-const navLinks = [
-    { href: "/about", label: "About" },
-    { href: "/experience", label: "Experience" },
-    { href: "/projects", label: "Projects" },
-    { href: "/skills", label: "Skills" },
-];
+type NavLinksProps = {
+    onClick?: () => void;
+};
 
 // shared links renderer
-function NavLinks({ onClick }: { onClick?: () => void }) {
+function NavLinks({ onClick }: NavLinksProps) {
     return (
         <>
             {navLinks.map((link) => (

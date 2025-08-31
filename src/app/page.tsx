@@ -5,7 +5,7 @@ import React from "react";
 import { ReactTyped } from "react-typed";
 import { PiSmileyMeltingFill } from "react-icons/pi";
 import { roles, socialLinks } from "@/_data/home";
-import SocialLinks from "@/_components/social-icon-links";
+import SocialLinks from "@/_components/social-links";
 
 export default function Home() {
   return (
