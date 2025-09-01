@@ -23,7 +23,7 @@ export default function Home() {
           />
         </div> */}
         <PiSmileyMeltingFill className="text-8xl"/>
-        <div className="space-y-3 text-lg/ text-center">
+        <div className="space-y-3 text-lg/6 text-center">
           <p className="mb-2 tracking-[.01em]">
             Hello! I'm
           </p>
