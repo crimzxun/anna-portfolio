@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { navLinks } from "@/_data/navbar";
+import { navLinks } from "@/_utils/constants";
 
 type NavLinksProps = {
     onClick?: () => void;

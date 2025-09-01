@@ -1,6 +1,6 @@
 "use client";
 
-import { footerLinks } from "@/_data/footer";
+import { footerLinks } from "@/_utils/constants";
 
 type FooterLinkProps = {
     href: string;
