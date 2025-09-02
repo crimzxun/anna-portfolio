@@ -8,9 +8,8 @@ import Hyperlink from "./hyperlink";
 export default function About() {
     return (
         <div id="about" className="font-pixel max-w-screen-lg mx-auto p-12 lg:p-8">
-            <section className="">
+            <section>
                 <Title mini="GET TO KNOW MORE" heading="about-me ☕︎" />
-                
                 <div className="text-xl mt-4 space-y-4 leading-normal">
                     <span></span>
                     <p>
