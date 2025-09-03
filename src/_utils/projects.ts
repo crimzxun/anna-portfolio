@@ -1,41 +1,40 @@
 import { FaGithub, FaItchIo, FaYoutube } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
-
-const projectIconMap = {
-    "github": FaGithub,
-    "itch.io": FaItchIo,
-    "youtube": FaYoutube,
-    "external-link": HiOutlineExternalLink,
+export const iconMap = {
+    github: FaGithub,
+    itchio: FaItchIo,
+    youtube: FaYoutube,
+    external: HiOutlineExternalLink,
 }
 
-export type ProjectCardProps = {
+export type ProjectData = {
     id: string;
     title: string;
     period: string;
     description: string;
     image: {
         src: string;
-        title: string;
+        label: string;
     }[];
     skills: string[];
     links?: {
         url: string;
         label: string;
-        icon: "github" | "itch.io" | "youtube" | "external"
+        icon: "github" | "itchio" | "youtube" | "external";
     }[];
 };
 
-export const projects: ProjectCardProps[] = [
+export const projects: ProjectData[] = [
     {
         id: "annaportfolio",
-        title: "My Portfolio",
+        title: "Portfolio",
         period: "August 2025 - Present",
         description: "The website you're looking at right now! Prior it was purely HTML, CSS, JavaScript but I decided to redo as a Next.js app.ᵕ̈",
         image: [
             {
-                src: "",
-                title: "",
+                src: "/projects/annaportfolio.png",
+                label: "Portfolio Home",
             },
         ],
         skills: [
@@ -48,7 +47,7 @@ export const projects: ProjectCardProps[] = [
         links: [
             {
                 url: "https://github.com/crimzxun/anna-portfolio",
-                label: "My Portfolio Repository",
+                label: "Portfolio Repository",
                 icon: "github",
             },
         ],
@@ -60,9 +59,37 @@ export const projects: ProjectCardProps[] = [
         description: "Official SHPE UCF website for the Society of Hispanic Professional Engineers at the University of Central Florida chapter.",
         image: [
             {
-                src: "",
-                title: "",
+                src: "/projects/shpeucfwebsite-landing.gif",
+                label: "SHPE UCF Website Landing",
             },
+            {
+                src: "/projects/shpeucfwebsite-about.gif",
+                label: "SHPE UCF Website About",
+            },
+            {
+                src: "/projects/shpeucfwebsite-shop.png",
+                label: "SHPE UCF Website Shop",
+            },
+            {
+                src: "/projects/shpeucfwebsite-shopitem.png",
+                label: "SHPE UCF Website Shop Item",
+            },
+            {
+                src: "/projects/shpeucfwebsite-cart.png",
+                label: "SHPE UCF Website Cart",
+            },
+            {
+                src: "/projects/shpeucfwebsite-inventorymanagement.png",
+                label: "SHPE UCF Website Inventory Management",
+            },
+            {
+                src: "/projects/shpeucfwebsite-additem.png",
+                label: "SHPE UCF Website Inventory Add Item",
+            },
+            {
+                src: "/projects/shpeucfwebsite-team.gif",
+                label: "SHPE UCF Website Dev Team",
+            },   
         ],
         skills: [
             "Next.js",
@@ -92,35 +119,35 @@ export const projects: ProjectCardProps[] = [
         image: [
             {
                 src: "/projects/aesthetiqr-home.png",
-                title: "AesthetiQR Home",
+                label: "AesthetiQR Home",
             },
             {
                 src: "/projects/aesthetiqr-register.png",
-                title: "AesthetiQR Register",
+                label: "AesthetiQR Register",
             },
             {
                 src: "/projects/aesthetiqr-login.png",
-                title: "AesthetiQR Login",
+                label: "AesthetiQR Login",
             },
             {
                 src: "/projects/aesthetiqr-whiteboard.png",
-                title: "AesthetiQR Whiteboard",
+                label: "AesthetiQR Whiteboard",
             },
             {
                 src: "/projects/aesthetiqr-aiprompt.png",
-                title: "AesthetiQR OpenAI Prompt",
+                label: "AesthetiQR OpenAI Prompt",
             },
             {
                 src: "/projects/aesthetiqr-qrcodegen.png",
-                title: "AesthetiQR QR Code Generation",
+                label: "AesthetiQR QR Code Generation",
             },
             {
                 src: "/projects/aesthetiqr-library.png",
-                title: "AesthetiQR Library",
+                label: "AesthetiQR Library",
             },
             {
                 src: "/projects/aesthetiqr-qrcodes.png",
-                title: "AesthetiQR QR codes",
+                label: "AesthetiQR QR codes",
             },
         ],
         skills: [
@@ -151,51 +178,51 @@ export const projects: ProjectCardProps[] = [
         image: [
             {
                 src: "/projects/veilrunner-titlescreen.png",
-                title: "Veilrunner Title Screen",
+                label: "Veilrunner Title Screen",
             },
             {
                 src: "/projects/veilrunner-loading.gif",
-                title: "Veilrunner Loading Screen",
+                label: "Veilrunner Loading Screen",
             },
             {
                 src: "/projects/veilrunner-hubshop.png",
-                title: "Veilrunner Shop",
+                label: "Veilrunner Shop",
             },
             {
                 src: "/projects/veilrunner-levelselect.png",
-                title: "Veilrunner Level Select Menu",
+                label: "Veilrunner Level Select Menu",
             },
             {
                 src: "/projects/veilrunner-portal.gif",
-                title: "Veilrunner Portal",
+                label: "Veilrunner Portal",
             },
             {
                 src: "/projects/veilrunner-forest.png",
-                title: "Veilrunner Forest Map",
+                label: "Veilrunner Forest Map",
             },
             {
                 src: "/projects/veilrunner-cave.png",
-                title: "Veilrunner Cave Map",
+                label: "Veilrunner Cave Map",
             },
             {
                 src: "/projects/veilrunner-underworld.png",
-                title: "Veilrunner Underworld",
+                label: "Veilrunner Underworld",
             },
             {
                 src: "/projects/veilrunner-skillrerolls.gif",
-                title: "Veilrunner Skill Rerolls",
+                label: "Veilrunner Skill Rerolls",
             },
             {
                 src: "/projects/veilrunner-warrior.gif",
-                title: "Veilrunner Warrior",
+                label: "Veilrunner Warrior",
             },
             {
                 src: "/projects/veilrunner-mushroom.gif",
-                title: "Veilrunner Mushroom Enemy",
+                label: "Veilrunner Mushroom Enemy",
             },
             {
                 src: "/projects/veilrunner-goblin.gif",
-                title: "Veilrunner Goblin Enemy",
+                label: "Veilrunner Goblin Enemy",
             },
         ],
         skills: [
@@ -212,7 +239,7 @@ export const projects: ProjectCardProps[] = [
             {
                 url: "https://crimzxun.itch.io/veilrunner",
                 label: "Veilrunner Itch.io",
-                icon: "itch.io",
+                icon: "itchio",
             },
             {
                 url: "https://www.youtube.com/watch?v=Cnar9nFX70Q",
@@ -225,11 +252,27 @@ export const projects: ProjectCardProps[] = [
         id: "universityeventsite",
         title: "University Event Site",
         period: "April 2024",
-        description: "",
+        description: "A full-stack web application with role-based access (super admin, admin, student) for university event and organization management using XAMPP/PHP and Google Maps where students can join organizations, create events, and engage via comments and ratings.",
         image: [
             {
-                src: "",
-                title: "",
+                src: "/projects/universityeventsite-ermodel.png",
+                label: "University Event Site ER Model",
+            },
+            {
+                src: "/projects/universityeventsite-rsos.png",
+                label: "University Event Site RSOs",
+            },
+            {
+                src: "/projects/universityeventsite-createrso.png",
+                label: "University Event Site Create RSO",
+            },
+            {
+                src: "/projects/universityeventsite-events.png",
+                label: "University Event Site Events",
+            },
+            {
+                src: "/projects/universityeventsite-createevent.png",
+                label: "University Event Site Create Event",
             },
         ],
         skills: [
@@ -256,11 +299,11 @@ export const projects: ProjectCardProps[] = [
         id: "castleofblood",
         title: "Castle of Blood",
         period: "January 2024 - April 2024",
-        description: "First time trying out animations and using a game engine! Castle of Blood is a 2D top-down Zelda-esque dungeon game made using Unity. Our group name is Team Rocket Games (and you might already know, it's a Pokemon reference haha). There were stuggles along the way but it was a learning experience!",
+        description: "First time using a game engine and trying out animations! Castle of Blood is a 2D top-down Zelda-esque dungeon game made using Unity. Our group name is Team Rocket Games (Pokemon reference xD). There were stuggles along the way but it was a learning experience!",
         image: [
             {
                 src: "/projects/castleofblood.png",
-                title: "Castle of Blood",
+                label: "Castle of Blood",
             },
         ],
         skills: [
@@ -285,7 +328,7 @@ export const projects: ProjectCardProps[] = [
         image: [
             {
                 src: "/projects/3dplatformer.png",
-                title: "3D Platformer",
+                label: "3D Platformer",
             },
         ],
         skills: [
@@ -314,7 +357,19 @@ export const projects: ProjectCardProps[] = [
         image: [
             {
                 src: "/projects/critterhunt-login.png",
-                title: "Critter Hunt Login Page",
+                label: "Critter Hunt Login",
+            },
+            {
+                src: "/projects/critterhunt-seqmodel.png",
+                label: "Critter Hunt Sequence Model",
+            },
+            {
+                src: "/projects/critterhunt-usecasemodel.png",
+                label: "Critter Hunt Use Case Model",
+            },
+            {
+                src: "/projects/critterhunt-classmodel.png",
+                label: "Critter Hunt Class Model",
             },
         ],
         skills: [
@@ -341,5 +396,5 @@ export const projects: ProjectCardProps[] = [
                 icon: "github",
             },
         ],
-    }
+    },
 ];
