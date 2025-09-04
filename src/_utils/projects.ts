@@ -30,7 +30,7 @@ export const projects: ProjectData[] = [
         id: "annaportfolio",
         title: "Portfolio",
         period: "August 2025 - Present",
-        description: "The website you're looking at right now! Prior it was purely HTML, CSS, JavaScript but I decided to redo as a Next.js app.ᵕ̈",
+        description: "The website you're looking at right now! Prior it was purely HTML, CSS, JavaScript but I decided to redo as a Next.js app. ◡̈",
         image: [
             {
                 src: "/projects/annaportfolio.png",

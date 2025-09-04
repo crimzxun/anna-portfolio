@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { iconMap, ProjectData } from "@/_utils/projects";
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
@@ -11,6 +11,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [fit, setFit] = useState<"cover" | "contain">("contain");
 
     const nextImage = () => {
         setCurrentIndex((prev) =>
@@ -24,16 +25,29 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         );
     };
 
+    useEffect(() => {
+        const img = new Image();
+        img.src = project.image[currentIndex].src;
+        img.onload = () => {
+            const ratio = img.width / img.height;
+            if (Math.abs(ratio - 16 / 9) < 0.35) {
+                setFit("cover");
+            } else {
+                setFit("contain");
+            }
+        };
+    }, [currentIndex, project.image]);
+
     return (
-        <div className="w-full max-w-md mx-auto border-double border-2 rounded-2xl p-4 shadow-lg flex flex-col gap-4">
+        <div className="w-full max-w-md mx-auto p-4 border-double border-2 rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.8)]">
             {/* image slider */}
-            <div className="relative w-full h-64 overflow-hidden rounded-xl">
+            <div className="relative w-full aspect-video overflow-hidden rounded-xl flex">
                 <AnimatePresence mode="wait">
                     <motion.img
                         key={project.image[currentIndex].src}
                         src={project.image[currentIndex].src}
                         alt={project.image[currentIndex].label}
-                        className="w-full h-full object-cover"
+                        className={`w-full h-full ${fit === "cover" ? "object-cover" : "object-contain"}`}
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity:0, x: -50 }}
@@ -46,22 +60,23 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     <>
                         <button
                             onClick={prevImage}
-                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full hover:black/70 transition cursor-pointer"
+                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-1 rounded-full hover:black/70 transition cursor-pointer"
                         >
-                            <LuChevronLeft />
+                            <LuChevronLeft className="text-2xl" />
                         </button>
                         <button
                             onClick={nextImage}
-                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full hover:black/70 transition cursor-pointer"
+                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-1 rounded-full hover:black/70 transition cursor-pointer"
                         >
-                            <LuChevronRight />
+                            <LuChevronRight className="text-2xl" />
                         </button>
                     </>
                 )}
-
+            </div>
+            <div>
                 {/* dots indicator */}
                 {project.image.length > 1 && (
-                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+                    <div className="flex justify-center gap-2">
                         {project.image.map((_, idx) => (
                             <div
                                 key={idx}
