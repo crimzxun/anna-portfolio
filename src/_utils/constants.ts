@@ -1,7 +1,8 @@
 import type { IconType } from "react-icons"; 
-import { FaGithub, FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { LuFileText, LuGlobe, LuLinkedin } from "react-icons/lu";
+import { FaGithub, FaGithubAlt, FaInstagram, FaItchIo, FaLinkedinIn } from "react-icons/fa";
+import { FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
+import { HiOutlineExternalLink, HiOutlineMail } from "react-icons/hi";
+import { LuFileText, LuGlobe } from "react-icons/lu";
 import { RiDiscordLine } from "react-icons/ri";
 
 export const navLinks = [
@@ -24,9 +25,19 @@ export const ucf = {
     label: "UCF",
 };
 
+export const iconMap = {
+    discord: RiDiscordLine,
+    github: FiGithub,
+    instagram: FaInstagram,
+    itchio: FaItchIo,
+    linkedin: FiLinkedin,
+    youtube: FiYoutube,
+    external: HiOutlineExternalLink,
+}
+
 export const socialLinks: { href: string; icon: IconType; label?: string; enabled: boolean; }[] = [
     {
-        href: "/assets/resume.pdf",
+        href: "/resume.pdf",
         icon: LuFileText,
         label: "Resume",
         enabled: true, // toggle easily

@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { iconMap, ProjectData } from "@/_utils/projects";
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
+import { motion, AnimatePresence } from "framer-motion";
+import { ProjectData } from "@/_utils/projects";
+import { iconMap } from "@/_utils/constants";
 
 type ProjectCardProps = {
     project: ProjectData;
@@ -39,9 +40,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     }, [currentIndex, project.image]);
 
     return (
-        <div className="w-full max-w-md mx-auto p-4 border-double border-2 rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.8)]">
+        <div className="w-full max-w-md mx-auto p-4 border-double border-2 rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.6),0_0_20px_rgba(255,255,255,0.4)]">
             {/* image slider */}
-            <div className="relative w-full aspect-video overflow-hidden rounded-xl flex">
+            <div className="relative w-full aspect-video overflow-hidden rounded-xl flex transition-transform hover:scale-105">
                 <AnimatePresence mode="wait">
                     <motion.img
                         key={project.image[currentIndex].src}
@@ -109,7 +110,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {project.skills.map((skill, idx) => (
                     <div
                         key={idx}
-                        className="flex items-center px-2 py-1 border rounded-lg text-xs"
+                        className="flex items-center px-2 py-1 border rounded-lg text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(255,255,255,0.6)]"
                     >
                         <span>{skill}</span>
                     </div>
@@ -128,7 +129,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 hover:underline"
+                                    className="flex items-center gap-2 hover:underline hover:text-indigo-300 hover:scale-105 transition"
                                 >
                                     <Icon size={20} />
                                     {link.label}

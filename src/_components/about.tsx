@@ -1,7 +1,7 @@
 "use client";
 
-import CatAscii from "./cat-ascii";
 import { ucf } from "@/_utils/constants";
+import CatAscii from "./cat-ascii";
 import Title from "./title";
 import Hyperlink from "./hyperlink";
 

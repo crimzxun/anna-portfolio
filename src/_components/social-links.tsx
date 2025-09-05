@@ -2,17 +2,6 @@
 
 import { IconType } from "react-icons";
 
-type SocialLink = {
-    href: string;
-    icon: IconType; // accept icon components directly
-    label?: string;
-    enabled: boolean;
-};
-
-type SocialLinksProps = {
-    links: SocialLink[];
-};
-
 type SocialIconProps = {
     href: string;
     icon: IconType;
@@ -34,6 +23,17 @@ function SocialIcon({ href, icon: Icon, label }: SocialIconProps) {
         </a>
     );
 }
+
+type SocialLink = {
+    href: string;
+    icon: IconType; // accept icon components directly
+    label?: string;
+    enabled: boolean;
+};
+
+type SocialLinksProps = {
+    links: SocialLink[];
+};
 
 export default function SocialLinks({ links }: SocialLinksProps) {
     return (

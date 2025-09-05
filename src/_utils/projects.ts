@@ -1,13 +1,3 @@
-import { FaGithub, FaItchIo, FaYoutube } from "react-icons/fa";
-import { HiOutlineExternalLink } from "react-icons/hi";
-
-export const iconMap = {
-    github: FaGithub,
-    itchio: FaItchIo,
-    youtube: FaYoutube,
-    external: HiOutlineExternalLink,
-}
-
 export type ProjectData = {
     id: string;
     title: string;
