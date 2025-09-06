@@ -41,40 +41,41 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
     return (
         <div className="w-full max-w-md mx-auto p-4 border-double border-2 rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.6),0_0_20px_rgba(255,255,255,0.4)]">
-            {/* image slider */}
-            <div className="relative w-full aspect-video overflow-hidden rounded-xl flex transition-transform hover:scale-105">
-                <AnimatePresence mode="wait">
-                    <motion.img
-                        key={project.image[currentIndex].src}
-                        src={project.image[currentIndex].src}
-                        alt={project.image[currentIndex].label}
-                        className={`w-full h-full ${fit === "cover" ? "object-cover" : "object-contain"}`}
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity:0, x: -50 }}
-                        transition={{ duration: 0.4 }}
-                    />
-                </AnimatePresence>
+            <div className="flex flex-col gap-4">
+                {/* image slider */}
+                <div className="relative w-full aspect-video overflow-hidden rounded-xl flex transition-transform hover:scale-105">
+                    <AnimatePresence mode="wait">
+                        <motion.img
+                            key={project.image[currentIndex].src}
+                            src={project.image[currentIndex].src}
+                            alt={project.image[currentIndex].label}
+                            className={`w-full h-full ${fit === "cover" ? "object-cover" : "object-contain"}`}
+                            initial={{ opacity: 0, x: 50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity:0, x: -50 }}
+                            transition={{ duration: 0.4 }}
+                        />
+                    </AnimatePresence>
 
-                {/* prev/next buttons */}
-                {project.image.length > 1 && (
-                    <>
-                        <button
-                            onClick={prevImage}
-                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-1 rounded-full hover:black/70 transition cursor-pointer"
-                        >
-                            <LuChevronLeft className="text-2xl" />
-                        </button>
-                        <button
-                            onClick={nextImage}
-                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-1 rounded-full hover:black/70 transition cursor-pointer"
-                        >
-                            <LuChevronRight className="text-2xl" />
-                        </button>
-                    </>
-                )}
-            </div>
-            <div>
+                    {/* prev/next buttons */}
+                    {project.image.length > 1 && (
+                        <>
+                            <button
+                                onClick={prevImage}
+                                className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-1 rounded-full hover:bg-black/70 transition cursor-pointer"
+                            >
+                                <LuChevronLeft className="text-2xl" />
+                            </button>
+                            <button
+                                onClick={nextImage}
+                                className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-1 rounded-full hover:bg-black/70 transition cursor-pointer"
+                            >
+                                <LuChevronRight className="text-2xl" />
+                            </button>
+                        </>
+                    )}
+                </div>
+
                 {/* dots indicator */}
                 {project.image.length > 1 && (
                     <div className="flex justify-center gap-2">
@@ -89,10 +90,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     </div>
                 )}
             </div>
-
+            
             {/* title + period */}
             <div>
-                <h2 className="text-xl font-semibold">
+                <h2 className="text-2xl font-semibold">
                     {project.title}
                 </h2>
                 <p className="text-sm">
@@ -110,9 +111,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {project.skills.map((skill, idx) => (
                     <div
                         key={idx}
-                        className="flex items-center px-2 py-1 border rounded-lg text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(255,255,255,0.6)]"
+                        className="flex items-center px-2 py-1 border rounded-lg text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(83,234,253,0.8)]"
                     >
-                        <span>{skill}</span>
+                        <span className="transition hover:scale-115 hover:text-cyan-300">
+                            {skill}
+                        </span>
                     </div>
                 ))}
             </div>
@@ -129,7 +132,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 hover:underline hover:text-indigo-300 hover:scale-105 transition"
+                                    className="flex items-center gap-2 hover:underline hover:text-green-300 hover:scale-105 transition"
                                 >
                                     <Icon size={20} />
                                     {link.label}

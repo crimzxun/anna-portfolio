@@ -104,7 +104,7 @@ export const projects: ProjectData[] = [
     {
         id: "aesthetiqr",
         title: "AesthetiQR",
-        period: "March 2025 - Present | Knight Hacks Project Launch",
+        period: "March 2025 - Present",
         description: "AesthetiQR is a QR code generator that offers a fun and visually engaging way to blend tech with design, allowing users to craft unique, customizable QR codes that look cool and artsy.𐙚",
         image: [
             {
