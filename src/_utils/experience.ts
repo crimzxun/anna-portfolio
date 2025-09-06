@@ -16,7 +16,7 @@ export type ExperienceData = {
     links?: {
         url: string;
         label: string;
-        icon: "github" | "linkedin" | "disord" | "instagram" | "external";
+        icon: "github" | "linkedin" | "discord" | "instagram" | "external";
     }[];
 };
 
