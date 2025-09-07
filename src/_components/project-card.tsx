@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 import { motion, AnimatePresence } from "framer-motion";
 import { ProjectData } from "@/_utils/projects";
 import { iconMap } from "@/_utils/constants";
@@ -64,13 +63,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                 onClick={prevImage}
                                 className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-1 rounded-full hover:bg-black/70 transition cursor-pointer"
                             >
-                                <LuChevronLeft className="text-2xl" />
+                                <span className="text-xl font-bold">&lt;</span>
                             </button>
                             <button
                                 onClick={nextImage}
                                 className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-1 rounded-full hover:bg-black/70 transition cursor-pointer"
                             >
-                                <LuChevronRight className="text-2xl" />
+                                <span className="text-xl font-bold">&gt;</span>
                             </button>
                         </>
                     )}
