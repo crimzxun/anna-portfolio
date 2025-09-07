@@ -49,9 +49,9 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                 {experience.skills.map((skill, idx) => (
                     <div
                         key={idx}
-                        className="flex items-center px-2 py-1 border rounded-lg text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(83,234,253,0.8)]"
+                        className="flex items-center px-2 py-1 border rounded-lg text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(0,188,255,0.8)]"
                     >
-                        <span className="transition hover:scale-115 hover:text-cyan-300">
+                        <span className="transition hover:scale-115 hover:text-sky-300">
                             {skill}
                         </span>
                     </div>
@@ -60,7 +60,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
 
             <button
                 onClick={() => setShowMore(!showMore)}
-                className="flex items-center justify-center gap-2 font-semibold text-lg text-sky-400 transform hover:underline hover:scale-110 cursor-pointer"
+                className="flex items-center justify-center gap-2 font-semibold text-lg text-sky-300 transform hover:underline hover:scale-110 cursor-pointer"
             >
                 {showMore ? "Show Less" : "Show More Details"}
                 <motion.div
@@ -107,7 +107,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                                                 href={link.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="flex items-center gap-2 hover:underline hover:text-indigo-300 hover:scale-105 transition"
+                                                className="flex items-center gap-2 hover:underline hover:text-sky-400 hover:scale-105 transition"
                                             >
                                                 <Icon size={20} />
                                                 {link.label}
