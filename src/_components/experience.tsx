@@ -9,7 +9,8 @@ export default function Experience() {
         <div id="experience" className="font-pixel max-w-screen-lg mx-auto p-12 lg:p-8">
             <section>
                 <Title mini="EXPLORE MY" heading="experience" />
-                <div className="flex flex-col gap-8">
+
+                <div className="flex flex-col gap-8 mt-8">
                     {experience.map((exp) => (
                         <ExperienceCard key={exp.id} experience={exp} />
                     ))}

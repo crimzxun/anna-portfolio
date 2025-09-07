@@ -1,5 +1,3 @@
-import { label } from "framer-motion/client";
-
 export type ExperienceData = {
     id: string;
     title: string;
@@ -60,17 +58,12 @@ export const experience: ExperienceData[] = [
             {
                 url: "https://www.instagram.com/shpeucf/",
                 label: "SHPE UCF Instagram",
-                icon: "external",
+                icon: "instagram",
             },
             {
                 url: "https://discord.com/invite/gRamS65mqT",
                 label: "SHPE UCF Discord",
-                icon: "external",
-            },
-            {
-                url: "https://www.tiktok.com/@shpe_ucf?_t=ZP-8x1AoD0oTDr&_r=1",
-                label: "SHPE UCF Discord",
-                icon: "external",
+                icon: "discord",
             },
         ],    
     },
@@ -124,7 +117,7 @@ export const experience: ExperienceData[] = [
         },
         description: "Served as an ULA in the UCF College of Engineering & Computer Science, assisting professors and providing academic support and guidance to students in selected undergraduate courses.",
         responsibilities: [
-            "Guided **200+** students across **4 core computer science courses** and multiple semesters by assisting with debugging, providing strategic problem-solving guidance and optimization, and reinforcing core programming concepts.",
+            "Guided 200+ students across 4 core computer science courses and multiple semesters by assisting with debugging, providing strategic problem-solving guidance and optimization, and reinforcing core programming concepts.",
             "Organized and taught weekly lab sessions of 30+ students to introduce new programming topics, deliver live coding demonstrations, and reinforce lecture material through visual illustrations and step-by-step coding techniques.",
             "Held weekly office hours (in-person and virtual via Zoom, with additional support via Discord and email) to address technical questions, clarify complex topics, and provide individualized academic support.",
             "Led review sessions via Zoom and proctored exams/quizzes in ensuring academic integrity and smooth exam administration.",
