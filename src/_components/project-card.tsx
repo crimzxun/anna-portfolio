@@ -101,7 +101,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </div>
 
             {/* description */}
-            <p className="text-md leading-relaxed">
+            <p className="leading-relaxed">
                 {project.description}
             </p>
 
