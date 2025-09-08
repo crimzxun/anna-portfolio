@@ -131,7 +131,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 hover:underline hover:text-green-300 hover:scale-105 transition"
+                                    className="flex items-center gap-2 hover:underline hover:text-indigo-300 hover:scale-105 transition"
                                 >
                                     <Icon size={20} />
                                     {link.label}
