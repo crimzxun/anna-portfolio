@@ -39,7 +39,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     }, [currentIndex, project.image]);
 
     return (
-        <div className="w-full max-w-md mx-auto p-4 border-double border-2 rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.6),0_0_20px_rgba(255,255,255,0.4)]">
+        <div className="w-full max-w-md mx-auto p-4 border-2 border-double rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.6),0_0_20px_rgba(255,255,255,0.4)]">
             <div className="flex flex-col gap-4">
                 {/* image slider */}
                 <div className="relative w-full aspect-video overflow-hidden rounded-xl flex transition-transform hover:scale-105">
