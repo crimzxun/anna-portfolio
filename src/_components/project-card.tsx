@@ -110,9 +110,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {project.skills.map((skill, idx) => (
                     <div
                         key={idx}
-                        className="flex items-center px-2 py-1 border rounded-lg text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(83,234,253,0.8)]"
+                        className="flex items-center px-2 py-1 border rounded-lg text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(116,212,255,0.8)]"
                     >
-                        <span className="transition hover:scale-115 hover:text-cyan-300">
+                        <span className="transition hover:scale-115 hover:text-sky-300">
                             {skill}
                         </span>
                     </div>

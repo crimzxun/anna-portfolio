@@ -23,14 +23,14 @@ export default function Home() {
           />
         </div> */}
         <PiSmileyMeltingFill className="text-8xl"/>
-        <div className="space-y-3 text-lg/6 text-center">
+        <div className="space-y-3 text-lg/6 lg:text-xl/6 text-center">
           <p className="mb-2 tracking-[.01em]">
             Hello! I'm
           </p>
-          <h1 className="text-5xl tracking-[.01em]">
+          <h1 className="text-5xl lg:text-6xl tracking-[.01em]">
             Anna Zheng
           </h1>
-          <p className="tracking-[.01em]">
+          <p className="text-xl md:text-2xl tracking-[.01em]">
             I'm a{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-pixel font-semibold px-2 py-0.5 rounded">
               <ReactTyped

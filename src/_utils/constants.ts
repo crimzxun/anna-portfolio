@@ -177,8 +177,8 @@ export const footerLinks: { href: string; icon: IconType; label: string; }[] = [
         label: "Discord",
     },
     { 
-        href: "https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app",
+        href: "https://www.linkedin.com/in/anna-zhengg/",
         icon: LuGlobe,
-        label: "Go to nextjs.org →",
+        label: "Add me on LinkedIn! →",
     },
 ];

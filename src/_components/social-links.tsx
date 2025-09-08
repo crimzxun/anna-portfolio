@@ -15,7 +15,7 @@ function SocialIcon({ href, icon: Icon, label }: SocialIconProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className="rounded-xl border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent p-2"
+            className="rounded-xl border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-white p-2"
         >
             <span className="text-3xl transition-transform hover:scale-110 duration-200">
                 <Icon /> {/* Render as JSX component */}
