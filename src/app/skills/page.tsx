@@ -10,10 +10,10 @@ export default function SkillsPage() {
             <section>
                 <Title mini="VIEW MY" heading="skills" />
                 <div className="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 mt-8 gap-6">
-                    <SkillCard category="Languages" items={languages} />
-                    <SkillCard category="Frameworks & Libraries" items={frameworkslibs} />
-                    <SkillCard category="Developer Tools" items={tools} />
-                    <SkillCard category="Certifications" items={certs} />
+                    <SkillCard category="languages" label="languages" items={languages} />
+                    <SkillCard category="frameworkslibs" label="frameworks & libraries" items={frameworkslibs} />
+                    <SkillCard category="tools" label="developer tools" items={tools} />
+                    <SkillCard category="certs" label="certifications" items={certs} />
                 </div>
             </section>
         </div>

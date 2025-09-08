@@ -137,6 +137,13 @@ export const certs = [
     { name: "Adobe Illustrator", icon: SiAdobeillustrator },
 ];
 
+export const categoryStyles: Record<string, string> = {
+    languages: "hover:text-sky-300 hover:drop-shadow-[0_0_8px_rgba(116,212,255,0.8)]",
+    frameworkslibs: "hover:text-green-300 hover:drop-shadow-[0_0_8px_rgba(123,241,168,0.8)]",
+    tools: "hover:text-indigo-300 hover:drop-shadow-[0_0_8px_rgba(163,179,255,0.8)]",
+    certs: "hover:text-pink-300 hover:drop-shadow-[0_0_8px_rgba(252,206,232,0.8)]",
+};
+
 export const socialLinks: { href: string; icon: IconType; label?: string; enabled: boolean; }[] = [
     {
         href: "/resume.pdf",
