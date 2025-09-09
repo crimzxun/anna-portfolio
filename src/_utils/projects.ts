@@ -295,19 +295,60 @@ export const projects: ProjectData[] = [
                 src: "/projects/castleofblood.png",
                 label: "Castle of Blood",
             },
+            {
+                src: "/projects/castleofblood-bloodball.gif",
+                label: "Castle of Blood Bloodball",
+            },
+            {
+                src: "/projects/castleofblood-vampdown.gif",
+                label: "Castle of Blood Movement",
+            },
+            {
+                src: "/projects/castleofblood-vampright.gif",
+                label: "Castle of Blood Movement",
+            },
+            {
+                src: "/projects/castleofblood-vampdown.gif",
+                label: "Castle of Blood Movement",
+            },
+            {
+                src: "/projects/castleofblood-vampleft.gif",
+                label: "Castle of Blood Movement",
+            },
+            {
+                src: "/projects/castleofblood-vampdash.gif",
+                label: "Castle of Blood Dash",
+            },
+            {
+                src: "/projects/castleofblood-claws.png",
+                label: "Castle of Blood Claw Attack",
+            },
+            {
+                src: "/projects/castleofblood-rm1.png",
+                label: "Castle of Blood",
+            },
+            {
+                src: "/projects/castleofblood-rm2.png",
+                label: "Castle of Blood",
+            },
+            {
+                src: "/projects/castleofblood-rm3.png",
+                label: "Castle of Blood",
+            },
+            {
+                src: "/projects/castleofblood-rm4.png",
+                label: "Castle of Blood",
+            },
+            {
+                src: "/projects/castleofblood-rm5.png",
+                label: "Castle of Blood",
+            },
         ],
         skills: [
             "Plastic SCM",
             "Unity",
             "C#",
             "Krita",
-        ],
-        links: [
-            {
-                url: "",
-                label: "",
-                icon: "github",
-            },
         ],
     },
     {
