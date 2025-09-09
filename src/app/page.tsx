@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+//import Image from "next/image";
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { PiSmileyMeltingFill } from "react-icons/pi";
@@ -25,13 +25,13 @@ export default function Home() {
         <PiSmileyMeltingFill className="text-8xl"/>
         <div className="space-y-3 text-lg/6 lg:text-xl/6 text-center">
           <p className="mb-2 tracking-[.01em]">
-            Hello! I'm
+            Hello! I&apos;m
           </p>
           <h1 className="text-5xl lg:text-6xl tracking-[.01em]">
             Anna Zheng
           </h1>
           <p className="text-xl md:text-2xl tracking-[.01em]">
-            I'm a{" "}
+            I&lsquo;m a{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-pixel font-semibold px-2 py-0.5 rounded">
               <ReactTyped
                 startWhenVisible

@@ -1,10 +1,11 @@
 "use client";
 
+import { IconType } from "react-icons";
 import { footerLinks } from "@/_utils/constants";
 
 type FooterLinkProps = {
     href: string;
-    icon: any;
+    icon: IconType;
     label: string;
 };
 
