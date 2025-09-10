@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Anna Zheng" }],
   icons: {
-    icon: "favicon.ico",
+    icon: "./favicon.ico",
   },
   openGraph: {
     title: "Anna Zheng | Portfolio",

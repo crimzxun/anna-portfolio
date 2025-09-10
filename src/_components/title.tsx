@@ -20,7 +20,7 @@ export default function Title({ mini, heading }: TitleProps) {
                         >
                             ˗ˋˏ
                         </span>
-                        <span className="transition duration-300 group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.9)]">
+                        <span className="transition duration-300 group-hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]">
                             {heading}
                         </span>
                         <span className="absolute left-full top-1/2 -translate-y-1/2 ml-2

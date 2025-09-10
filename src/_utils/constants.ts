@@ -46,7 +46,7 @@ import {
     SiVite,
     SiXampp
 } from "react-icons/si";
-import { VscAzureDevops, VscCode } from "react-icons/vsc";
+import { VscAzureDevops, VscCode, VscVscode } from "react-icons/vsc";
 
 export const navLinks = [
     { href: "/about", label: "About" },
@@ -111,7 +111,7 @@ export const frameworkslibs = [
 export const tools = [
     { name: "Git", icon: SiGit },
     { name: "GitHub", icon: SiGithub },
-    { name: "VS Code", icon: VscCode },
+    { name: "VS Code", icon: VscVscode },
     { name: "Eclipse", icon: SiEclipseide },
     { name: "Anaconda", icon: SiAnaconda },
     { name: "Jupyter Notebook", icon: SiJupyter },
