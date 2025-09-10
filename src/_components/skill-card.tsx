@@ -1,12 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SkillItem } from "@/_utils/constants";
 import { categoryStyles } from "@/_utils/constants";
+import { resolveIcon } from "@/_utils/icon-resolver";
 
-type SkillCardProps = {
-    category: string;
+export type SkillCardProps = {
+    category: "languages" | "frameworkslibs" | "tools" | "certs";
     label: string;
-    items: { name: string, icon?: React.ElementType }[];
+    items: SkillItem[];
 };
 
 export default function SkillCard({ category, label, items }: SkillCardProps) {
@@ -22,7 +24,7 @@ export default function SkillCard({ category, label, items }: SkillCardProps) {
             </h2>
             <div className="grid grid-cols-3 lg:flex lg:flex-wrap lg:justify-center gap-4 lg:gap-6">
                 {items.map((item, idx) => {
-                    const Icon = item.icon;
+                    const Icon = resolveIcon(item.icon);
                     return (
                         <div
                             key={idx}

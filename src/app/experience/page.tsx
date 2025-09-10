@@ -1,9 +1,14 @@
-"use client";
-
+import { createMetadata } from "@/_utils/metadata";
 import { experience } from "@/_utils/experience";
 import Title from "@/_components/title";
 import Timeline from "@/_components/timeline";
 import ExperienceCard from "@/_components/experience-card";
+
+export const metadata = createMetadata({
+    title: "Anna Zheng | Experience",
+    description: "A timeline of Anna Zheng's professional experiences.",
+    path: "experience",
+});
 
 export default function ExperiencePage() {
     return (
@@ -12,7 +17,7 @@ export default function ExperiencePage() {
                 <Title mini="EXPLORE MY" heading="experience" />
                 <Timeline 
                     items={experience}
-                    renderCard={(exp) => <ExperienceCard experience={exp} />}
+                    Card={ExperienceCard}
                 />
             </section>
         </div>

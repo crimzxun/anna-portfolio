@@ -1,8 +1,13 @@
-"use client";
-
+import { createMetadata } from "@/_utils/metadata";
 import { projects } from "@/_utils/projects";
 import Title from "@/_components/title";
 import ProjectCard from "@/_components/project-card";
+
+export const metadata = createMetadata({
+    title: "Anna Zheng | Projects",
+    description: "A gallery of some of Anna Zheng's notable projects as a software engineer.",
+    path: "projects",
+});
 
 export default function ProjectsPage() {
     return (

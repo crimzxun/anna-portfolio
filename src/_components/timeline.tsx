@@ -24,10 +24,10 @@ function TimelineNode() {
 
 type TimelineProps<T> = {
     items: T[];
-    renderCard: (item: T) => React.ReactNode;
+    Card: React.ComponentType<{ experience: T }>;
 };
 
-export default function Timeline<T>({ items, renderCard }: TimelineProps<T>) {
+export default function Timeline<T>({ items, Card }: TimelineProps<T>) {
     return (
         <div className="relative mt-8">
             {/* vertical timeline */}
@@ -48,7 +48,7 @@ export default function Timeline<T>({ items, renderCard }: TimelineProps<T>) {
 
                         {/* card shifted to the right */}
                         <div className="ml-16 flex-1">
-                            {renderCard(item)}
+                            <Card experience={item} />
                         </div>
                     </motion.div>
                 ))}

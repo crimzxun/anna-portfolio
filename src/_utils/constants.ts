@@ -68,6 +68,77 @@ export const ucf = {
     label: "UCF",
 };
 
+export type SkillItem = {
+  name: string;
+  icon?: string; // format: "si:SiPython", "fa:FaReact", etc.
+};
+
+export const languages: SkillItem[] = [
+    { name: "C", icon: "si:SiC" },
+    { name: "C++", icon: "si:SiCplusplus" },
+    { name: "C#", icon: "si:SiDotnet" },
+    { name: "Java", icon: "fa6:FaJava" },
+    { name: "Python", icon: "si:SiPython" },
+    { name: "JavaScript", icon: "si:SiJavascript" },
+    { name: "TypeScript", icon: "si:SiTypescript" },
+    { name: "HTML", icon: "si:SiHtml5" },
+    { name: "CSS", icon: "si:SiCss3" },
+    { name: "SQL", icon: "fa6:FaDatabase" },
+    { name: "PHP", icon: "si:SiPhp" },
+    { name: "R", icon: "si:SiR" },
+];
+
+export const frameworkslibs: SkillItem[] = [
+    { name: "React", icon: "si:SiReact" },
+    { name: "Next.js", icon: "si:SiNextdotjs" },
+    { name: "Node.js", icon: "si:SiNodedotjs" },
+    { name: "Express.js", icon: "si:SiExpress" },
+    { name: "Tailwind CSS", icon: "si:SiTailwindcss" },
+    { name: "Vite", icon: "si:SiVite" },
+    { name: "tRPC", icon: "si:SiTrpc" },
+    { name: "NumPy", icon: "si:SiNumpy" },
+    { name: "Pandas", icon: "si:SiPandas" },
+    { name: "Scikit-learn", icon: "si:SiScikitlearn" },
+    { name: "Pygame", icon: "fa6:FaGamepad" },
+    { name: "OpenGL", icon: "si:SiOpengl" },
+];
+
+export const tools: SkillItem[] = [
+    { name: "Git", icon: "si:SiGit" },
+    { name: "GitHub", icon: "si:SiGithub" },
+    { name: "VS Code", icon: "vsc:VscVscode" },
+    { name: "Eclipse", icon: "si:SiEclipseide" },
+    { name: "Anaconda", icon: "si:SiAnaconda" },
+    { name: "Jupyter Notebook", icon: "si:SiJupyter" },
+    { name: "Android Studio", icon: "si:SiAndroidstudio" },
+    { name: "XAMPP", icon: "si:SiXampp" },
+    { name: "Apache Tomcat", icon: "si:SiApachetomcat" },
+    { name: "Plastic SCM", icon: "si:SiUnity" },
+    { name: "Azure DevOps", icon: "vsc:VscAzureDevops" },
+    { name: "Unity", icon: "si:SiUnity" },
+    { name: "Unreal Engine", icon: "si:SiUnrealengine" },
+    { name: "Figma", icon: "si:SiFigma" },
+    { name: "Postman", icon: "si:SiPostman" },
+    { name: "MySQL", icon: "gr:GrMysql" },
+    { name: "MongoDB", icon: "si:SiMongodb" },
+    { name: "Supabase", icon: "si:SiSupabase" },
+    { name: "Vercel", icon: "si:SiVercel" },
+    { name: "Drizzle", icon: "si:SiDrizzle" },
+];
+
+export const certs: SkillItem[] = [
+    { name: "Microsoft Office Specialist", icon: "fa6:FaMicrosoft" },
+    { name: "Adobe Photoshop", icon: "si:SiAdobephotoshop" },
+    { name: "Adobe Illustrator", icon: "si:SiAdobeillustrator" },
+];
+
+export const categoryStyles: Record<string, string> = {
+    languages: "hover:text-sky-300 hover:drop-shadow-[0_0_8px_rgba(116,212,255,0.8)]",
+    frameworkslibs: "hover:text-green-300 hover:drop-shadow-[0_0_8px_rgba(123,241,168,0.8)]",
+    tools: "hover:text-indigo-300 hover:drop-shadow-[0_0_8px_rgba(163,179,255,0.8)]",
+    certs: "hover:text-pink-300 hover:drop-shadow-[0_0_8px_rgba(253,165,213,0.8)]",
+};
+
 export const iconMap = {
     discord: RxDiscordLogo,
     github: FiGithub,
@@ -76,72 +147,6 @@ export const iconMap = {
     linkedin: FiLinkedin,
     youtube: FiYoutube,
     external: LuExternalLink,
-};
-
-export const languages = [
-    { name: "C", icon: SiC },
-    { name: "C++", icon: SiCplusplus },
-    { name: "C#", icon: SiDotnet },
-    { name: "Java", icon: FaJava },
-    { name: "Python", icon: SiPython },
-    { name: "JavaScript", icon: SiJavascript },
-    { name: "TypeScript", icon: SiTypescript },
-    { name: "HTML", icon: SiHtml5 },
-    { name: "CSS", icon: SiCss3 },
-    { name: "SQL", icon: FaDatabase },
-    { name: "PHP", icon: SiPhp },
-    { name: "R", icon: SiR },
-];
-
-export const frameworkslibs = [
-    { name: "React", icon: SiReact },
-    { name: "Next.js", icon: SiNextdotjs },
-    { name: "Node.js", icon: SiNodedotjs },
-    { name: "Express.js", icon: SiExpress },
-    { name: "Tailwind CSS", icon: SiTailwindcss },
-    { name: "Vite", icon: SiVite },
-    { name: "tRPC", icon: SiTrpc },
-    { name: "NumPy", icon: SiNumpy },
-    { name: "Pandas", icon: SiPandas },
-    { name: "Scikit-learn", icon: SiScikitlearn },
-    { name: "Pygame", icon: FaGamepad },
-    { name: "OpenGL", icon: SiOpengl },
-];
-
-export const tools = [
-    { name: "Git", icon: SiGit },
-    { name: "GitHub", icon: SiGithub },
-    { name: "VS Code", icon: VscVscode },
-    { name: "Eclipse", icon: SiEclipseide },
-    { name: "Anaconda", icon: SiAnaconda },
-    { name: "Jupyter Notebook", icon: SiJupyter },
-    { name: "Android Studio", icon: SiAndroidstudio },
-    { name: "XAMPP", icon: SiXampp },
-    { name: "Apache Tomcat", icon: SiApachetomcat },
-    { name: "Plastic SCM", icon: SiUnity },
-    { name: "Azure DevOps", icon: VscAzureDevops },
-    { name: "Unity", icon: SiUnity },
-    { name: "Unreal Engine", icon: SiUnrealengine },
-    { name: "Figma", icon: SiFigma },
-    { name: "Postman", icon: SiPostman },
-    { name: "MySQL", icon: SiMysql },
-    { name: "MongoDB", icon: SiMongodb },
-    { name: "Supabase", icon: SiSupabase },
-    { name: "Vercel", icon: SiVercel },
-    { name: "Drizzle", icon: SiDrizzle },
-];
-
-export const certs = [
-    { name: "Microsoft Office Specialist", icon: FaMicrosoft },
-    { name: "Adobe Photoshop", icon: SiAdobephotoshop },
-    { name: "Adobe Illustrator", icon: SiAdobeillustrator },
-];
-
-export const categoryStyles: Record<string, string> = {
-    languages: "hover:text-sky-300 hover:drop-shadow-[0_0_8px_rgba(116,212,255,0.8)]",
-    frameworkslibs: "hover:text-green-300 hover:drop-shadow-[0_0_8px_rgba(123,241,168,0.8)]",
-    tools: "hover:text-indigo-300 hover:drop-shadow-[0_0_8px_rgba(163,179,255,0.8)]",
-    certs: "hover:text-pink-300 hover:drop-shadow-[0_0_8px_rgba(253,165,213,0.8)]",
 };
 
 export const socialLinks: { href: string; icon: IconType; label?: string; enabled: boolean; }[] = [

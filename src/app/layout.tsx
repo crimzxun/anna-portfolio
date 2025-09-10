@@ -19,9 +19,13 @@ const pixelifySans = Pixelify_Sans({
   subsets: ["latin"],
 });
 
+const pageTitle = "Anna Zheng | Portfolio";
+const pageDesc = 
+  "Anna Zheng is a software engineer and a Computer Science student from University of Central Florida.";
+
 export const metadata: Metadata = {
-  title: "Anna Zheng | Portfolio",
-  description: "Anna Zheng is a software engineer and a Computer Science student from University of Central Florida.",
+  title: pageTitle,
+  description: pageDesc,
   keywords: [
     "Anna Zheng",
     "Software Engineer",
@@ -42,22 +46,22 @@ export const metadata: Metadata = {
     icon: "./favicon.ico",
   },
   openGraph: {
-    title: "Anna Zheng | Portfolio",
-    description: "Anna Zheng is a software engineer and a Computer Science student from University of Central Florida.",
-    url: "https://annazheng.dev",
-    siteName: "Anna Zheng Portfolio",
-    images: [
-      {
-        url: "/preview.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Anna Zheng - Software Engineer",
-      },
-    ],
-    locale: "en_US",
     type: "website",
+    locale: "en_US",
+    title: pageTitle,
+    description: pageDesc,
+    url: "https://annazheng.vercel.app/",
+    siteName: "Anna Zheng Portfolio",
+    // images: [
+    //   {
+    //     url: "/preview.jpg",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Anna Zheng - Software Engineer",
+    //   },
+    // ],
   },
-  metadataBase: new URL('https://annazheng.dev'),
+  metadataBase: new URL('https://annazheng.vercel.app/'),
 };
 
 export default function RootLayout({

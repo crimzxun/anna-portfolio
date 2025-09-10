@@ -1,8 +1,13 @@
-"use client";
-
+import { createMetadata } from "@/_utils/metadata";
 import { languages, frameworkslibs, tools, certs } from "@/_utils/constants";
 import Title from "@/_components/title";
 import SkillCard from "@/_components/skill-card";
+
+export const metadata = createMetadata({
+    title: "Anna Zheng | Skills",
+    description: "An overview of Anna Zheng's technical skills.",
+    path: "skills",
+});
 
 export default function SkillsPage() {
     return (
