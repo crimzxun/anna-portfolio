@@ -1,52 +1,8 @@
 import type { IconType } from "react-icons"; 
 import { FaGithub, FaInstagram, FaItchIo, FaLinkedinIn } from "react-icons/fa";
-import { FaDatabase, FaGamepad, FaJava, FaMicrosoft } from "react-icons/fa6";
 import { FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
 import { LuExternalLink, LuFileText, LuGlobe, LuMail } from "react-icons/lu";
 import { RxDiscordLogo } from "react-icons/rx";
-import { 
-    SiAdobeillustrator,
-    SiAdobephotoshop,
-    SiAnaconda,
-    SiAndroidstudio,
-    SiApachetomcat,
-    SiC, 
-    SiCplusplus, 
-    SiCss3, 
-    SiDotnet, 
-    SiDrizzle, 
-    SiEclipseide, 
-    SiExpress, 
-    SiFigma, 
-    SiGit, 
-    SiGithub, 
-    SiHtml5, 
-    SiJavascript, 
-    SiJupyter, 
-    SiMongodb, 
-    SiMysql, 
-    SiNextdotjs, 
-    SiNodedotjs, 
-    SiNumpy, 
-    SiOpengl, 
-    SiPandas, 
-    SiPhp, 
-    SiPostman, 
-    SiPython, 
-    SiR, 
-    SiReact, 
-    SiScikitlearn, 
-    SiSupabase, 
-    SiTailwindcss, 
-    SiTrpc, 
-    SiTypescript, 
-    SiUnity, 
-    SiUnrealengine, 
-    SiVercel, 
-    SiVite,
-    SiXampp
-} from "react-icons/si";
-import { VscAzureDevops, VscCode, VscVscode } from "react-icons/vsc";
 
 export const navLinks = [
     { href: "/about", label: "About" },
