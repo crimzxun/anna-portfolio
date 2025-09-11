@@ -1,9 +1,3 @@
-import type { IconType } from "react-icons"; 
-import { FaGithub, FaInstagram, FaItchIo, FaLinkedinIn } from "react-icons/fa";
-import { FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
-import { LuExternalLink, LuFileText, LuGlobe, LuMail } from "react-icons/lu";
-import { RxDiscordLogo } from "react-icons/rx";
-
 export const navLinks = [
     { href: "/about", label: "About" },
     { href: "/experience", label: "Experience" },
@@ -22,6 +16,16 @@ export const roles = [
 export const ucf = { 
     href: "https://www.ucf.edu/",
     label: "UCF",
+};
+
+export const iconMap = {
+    discord: "rx:RxDiscordLogo",
+    github: "fi:FiGithub",
+    instagram: "fa:FaInstagram",
+    itchio: "fa:FaItchIo",
+    linkedin: "fi:FiLinkedin",
+    youtube: "fi:FiYoutube",
+    external: "lu:LuExternalLink",
 };
 
 export type SkillItem = {
@@ -95,51 +99,41 @@ export const categoryStyles: Record<string, string> = {
     certs: "hover:text-pink-300 hover:drop-shadow-[0_0_8px_rgba(253,165,213,0.8)]",
 };
 
-export const iconMap = {
-    discord: RxDiscordLogo,
-    github: FiGithub,
-    instagram: FaInstagram,
-    itchio: FaItchIo,
-    linkedin: FiLinkedin,
-    youtube: FiYoutube,
-    external: LuExternalLink,
-};
-
-export const socialLinks: { href: string; icon: IconType; label?: string; enabled: boolean; }[] = [
+export const socialLinks: { href: string; icon: string; label?: string; enabled: boolean; }[] = [
     {
         href: "/resume.pdf",
-        icon: LuFileText,
+        icon: "lu:LuFileText",
         label: "Resume",
         enabled: true, // toggle easily
     },
     {
         href: "https://github.com/crimzxun",
-        icon: FaGithub,
+        icon: "fa:FaGithub",
         label: "GitHub",
         enabled: true,
     },
     {
         href: "https://www.linkedin.com/in/anna-zhengg/",
-        icon: FaLinkedinIn,
+        icon: "fa:FaLinkedinIn",
         label: "LinkedIn",
         enabled: true,
     },
 ];
 
-export const footerLinks: { href: string; icon: IconType; label: string; }[] = [
+export const footerLinks: { href: string; icon: string; label: string; }[] = [
     { 
         href: "mailto:zanna3715@gmail.com",
-        icon: LuMail,
+        icon: "lu:LuMail",
         label: "Email me",
     },
     { 
         href: "https://discordapp.com/users/251505606521782272",
-        icon: RxDiscordLogo,
+        icon: "rx:RxDiscordLogo",
         label: "Discord",
     },
     { 
         href: "https://www.linkedin.com/in/anna-zhengg/",
-        icon: LuGlobe,
+        icon: "lu:LuGlobe",
         label: "Add me on LinkedIn! →",
     },
 ];

@@ -1,23 +1,24 @@
 "use client";
 
-import { IconType } from "react-icons";
 import { footerLinks } from "@/_utils/constants";
+import { resolveIcon } from "@/_utils/icon-resolver";
 
 type FooterLinkProps = {
     href: string;
-    icon: IconType;
+    icon: string;
     label: string;
 };
 
-function FooterLink({ href, icon: Icon, label}: FooterLinkProps) {
-    return (
+function FooterLink({ href, icon, label}: FooterLinkProps) {
+    const Icon = resolveIcon(icon);
+    return (     
         <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
         >
-            <Icon className="text-lg text-[#666666]" />
+            {Icon && <Icon className="text-lg text-[#666666]" />}
             {label}
         </a>
     );

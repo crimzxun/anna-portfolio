@@ -6,6 +6,7 @@ import { LuCalendarDays, LuChevronDown, LuMapPin } from "react-icons/lu";
 import { AnimatePresence, motion } from "framer-motion";
 import { ExperienceData } from "@/_utils/experience";
 import { iconMap } from "@/_utils/constants";
+import { resolveIcon } from "@/_utils/icon-resolver";
 
 type ExperienceCardProps = {
     experience: ExperienceData;
@@ -59,7 +60,8 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                     </div>
                 ))}
             </div>
-
+            
+            {/* showMore for key responsibilities & achievements and links */}
             <button
                 onClick={() => setShowMore(!showMore)}
                 className="flex items-center justify-center gap-2 font-semibold text-lg text-sky-300 transform hover:underline hover:scale-110 cursor-pointer"
@@ -86,7 +88,6 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                         className="overflow-hidden mt-4 space-y-4"
                     >
                         <div>
-                            {/* <span className="w-1 h-4 rounded-full bg-white" /> */}
                             <h2 className="text-2xl font-bold">Key Responsibilities & Achievements</h2>
                             <ul className="list-disc list-outside pl-4 space-y-1">
                                 {experience.responsibilities.map((resp, idx) => (
@@ -102,7 +103,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                                 <h2 className="text-2xl font-bold">Links & Resources</h2>
                                 <div className="flex flex-wrap gap-4">
                                     {experience.links?.map((link, idx) => {
-                                        const Icon = iconMap[link.icon];
+                                        const Icon = resolveIcon(iconMap[link.icon]);
                                         return (
                                             <a
                                                 key={idx}
@@ -111,7 +112,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                                                 rel="noopener noreferrer"
                                                 className="flex items-center gap-2 hover:underline hover:text-sky-400 hover:scale-105 transition"
                                             >
-                                                <Icon size={20} />
+                                                {Icon && <Icon size={20} />}
                                                 {link.label}
                                             </a>
                                         );

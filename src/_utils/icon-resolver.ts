@@ -1,15 +1,25 @@
+import * as FaIcons from "react-icons/fa";
 import * as Fa6Icons from "react-icons/fa6";
+import * as FiIcons from "react-icons/fi";
 import * as GrIcons from "react-icons/gr";
+import * as LuIcons from "react-icons/lu";
+import * as RxIcons from "react-icons/rx";
 import * as SiIcons from "react-icons/si";
 import * as VscIcons from "react-icons/vsc";
 
+// map prefix -> icon set
 const libraries: Record<string, Record<string, React.ElementType>> = {
+    fa: FaIcons,
     fa6: Fa6Icons,
+    fi: FiIcons,
     gr: GrIcons,
+    lu: LuIcons,
+    rx: RxIcons,
     si: SiIcons,
     vsc: VscIcons,
 };
 
+// takes "fa:FaGithub" -> FaIcons.FaGithub
 export function resolveIcon(iconString?: string) {
     if (!iconString) return null;
 

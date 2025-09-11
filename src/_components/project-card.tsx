@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ProjectData } from "@/_utils/projects";
 import { iconMap } from "@/_utils/constants";
+import { resolveIcon } from "@/_utils/icon-resolver";
 
 type ProjectCardProps = {
     project: ProjectData;
@@ -124,7 +125,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {project.links && (
                     <div className="flex flex-wrap gap-2 mt-2">
                         {project.links.map((link, idx) => {
-                            const Icon = iconMap[link.icon];
+                            const Icon = resolveIcon(iconMap[link.icon]);
                             return (
                                 <a
                                     key={idx}
@@ -133,7 +134,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-2 hover:underline hover:text-indigo-300 hover:scale-105 transition"
                                 >
-                                    <Icon size={20} />
+                                    {Icon && <Icon size={20} />}
                                     {link.label}
                                 </a>
                             );

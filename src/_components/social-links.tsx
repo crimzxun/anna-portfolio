@@ -1,14 +1,15 @@
 "use client";
 
-import { IconType } from "react-icons";
+import { resolveIcon } from "@/_utils/icon-resolver";
 
 type SocialIconProps = {
     href: string;
-    icon: IconType;
+    icon: string;
     label?: string; // useful for accessibility
 };
 
-function SocialIcon({ href, icon: Icon, label }: SocialIconProps) {
+function SocialIcon({ href, icon, label }: SocialIconProps) {
+    const Icon = resolveIcon(icon);
     return (
         <a
             href={href}
@@ -18,7 +19,7 @@ function SocialIcon({ href, icon: Icon, label }: SocialIconProps) {
             className="rounded-xl border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-white p-2"
         >
             <span className="text-3xl transition-transform hover:scale-110 duration-200">
-                <Icon /> {/* Render as JSX component */}
+                {Icon && <Icon />}
             </span>
         </a>
     );
@@ -26,7 +27,7 @@ function SocialIcon({ href, icon: Icon, label }: SocialIconProps) {
 
 type SocialLink = {
     href: string;
-    icon: IconType; // accept icon components directly
+    icon: string;
     label?: string;
     enabled: boolean;
 };
