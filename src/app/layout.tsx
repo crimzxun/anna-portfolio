@@ -52,14 +52,14 @@ export const metadata: Metadata = {
     description: pageDesc,
     url: "https://annazheng.vercel.app/",
     siteName: "Anna Zheng Portfolio",
-    // images: [
-    //   {
-    //     url: "/preview.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Anna Zheng - Software Engineer",
-    //   },
-    // ],
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Anna Zheng - Software Engineer",
+      },
+    ],
   },
   metadataBase: new URL('https://annazheng.vercel.app/'),
 };

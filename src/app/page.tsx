@@ -1,6 +1,6 @@
 "use client";
 
-//import Image from "next/image";
+import Image from "next/image";
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { PiSmileyMeltingFill } from "react-icons/pi";
@@ -10,41 +10,41 @@ import SocialLinks from "@/_components/social-links";
 export default function Home() {
   return (
     <div className="font-pixel grid grid-rows-[15px_1fr_15px] items-center justify-items-center h-full p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center">
-        {/* <div className="border border-5 rounded-full">
-          <Image
-            className="dark:invert"
-            aria-hidden
-            src="/logos/discord-alt.svg"
-            alt="Profile Logo"
-            width={180}
-            height={90}
-            priority
-          />
-        </div> */}
-        <PiSmileyMeltingFill className="text-8xl"/>
-        <div className="space-y-3 text-lg/6 lg:text-xl/6 text-center">
-          <p className="mb-2 tracking-[.01em]">
-            Hello! I&apos;m
-          </p>
-          <h1 className="text-5xl lg:text-6xl tracking-[.01em]">
-            Anna Zheng
-          </h1>
-          <p className="text-xl md:text-2xl tracking-[.01em]">
-            I&lsquo;m a{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-pixel font-semibold px-2 py-0.5 rounded">
-              <ReactTyped
-                startWhenVisible
-                strings={roles}
-                typeSpeed={40}
-                backSpeed={50}
-                backDelay={1500}
-                loop
-              />
-            </code>
-          </p>
+      <main className="flex flex-col row-start-2 items-center">
+        <Image
+          className="" // dark:invert
+          aria-hidden
+          src="/ginkgo.png"
+          alt="Profile Logo"
+          width={180}
+          height={180}
+          priority
+        />
+
+        <div className="flex flex-col gap-[32px]">
+          <div className="space-y-3 text-lg/6 lg:text-xl/6 text-center">
+            <p className="mb-2 tracking-[.01em]">
+              Hello! I&apos;m
+            </p>
+            <h1 className="text-5xl lg:text-6xl tracking-[.01em]">
+              Anna Zheng
+            </h1>
+            <p className="text-xl md:text-2xl tracking-[.01em]">
+              I&lsquo;m a{" "}
+              <code className="bg-black/[.05] dark:bg-white/[.06] font-pixel font-semibold px-2 py-0.5 rounded">
+                <ReactTyped
+                  startWhenVisible
+                  strings={roles}
+                  typeSpeed={40}
+                  backSpeed={50}
+                  backDelay={1500}
+                  loop
+                />
+              </code>
+            </p>
+          </div>
+          <SocialLinks links={socialLinks}/>
         </div>
-        <SocialLinks links={socialLinks}/>
       </main>     
     </div>
   );
