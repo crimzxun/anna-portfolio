@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: "Anna Zheng Portfolio",
     images: [
       {
-        url: "/logo.png",
+        url: "/mylogo.png",
         width: 1200,
         height: 630,
         alt: "Anna Zheng - Software Engineer",

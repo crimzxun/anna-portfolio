@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import { ReactTyped } from "react-typed";
-import { PiSmileyMeltingFill } from "react-icons/pi";
 import { roles, socialLinks } from "@/_utils/constants";
 import SocialLinks from "@/_components/social-links";
 
@@ -14,7 +13,7 @@ export default function Home() {
         <Image
           className="" // dark:invert
           aria-hidden
-          src="/ginkgo.png"
+          src="/mylogo.png"
           alt="Profile Logo"
           width={180}
           height={180}

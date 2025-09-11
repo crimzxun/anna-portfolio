@@ -6,7 +6,7 @@ export function createMetadata({
     title,
     description,
     keywords = [],
-    image = "/preview.jpg",
+    image = "/mylogo.png",
     path = "",
 } : {
     title: string;
