@@ -23,9 +23,9 @@ export default function About() {
                 Currently, I&apos;m trying to learn to crochet and studying for my GRE hehe.
             </p>
             <p>
-                Fun fact: The favicon and the logo you see on the home page is a ginkgo leaf which I designed using Resprite! 
-                Ginkgo trees are known as "living fossils" of trees due to their long lifespan and incredible ability to survive extreme conditions.
-                They symbolize hope, strength, endurance, resilience, and longevity.
+                A small fun fact: The favicon and the logo you see on the home page is a ginkgo leaf which I designed using Resprite! 
+                Ginkgo trees are known as &quot;living fossils&quot; of trees due to their long lifespan and incredible ability to survive extreme conditions,
+                symbolizing hope, strength, endurance, resilience, and longevity.
             </p>
         </div>
     );
