@@ -9,8 +9,8 @@ export default function About() {
             <p>
                 Hihi! I&apos;m Anna, a software engineer and a Computer Science student at{" "}
                 <Hyperlink href={ucf.href} label={ucf.label} />
-                {" "}with a passion for machine learning/AI, computer vision, full-stack and game development. 
-                I enjoy exploring and learning new technologies and frameworks, currently delving more into AI and mobile development. 
+                {" "}with a passion for full-stack development, game development, and machine learning/computer vision. 
+                I enjoy exploring and learning new technologies and frameworks, currently delving more into computer vision and mobile development. 
                 I love building projects that combine creativity with technical problem-solving and exploring new ways to solve problems.
             </p>
             <p>
@@ -20,7 +20,12 @@ export default function About() {
             </p>
             <p>
                 Outside of coding, I enjoy drawing, reading, playing badminton/volleyball, and listening to music (atm, RnB and indie). 
-                Currently, I&apos;m trying to learn to crochet and studying for my GRE.
+                Currently, I&apos;m trying to learn to crochet and studying for my GRE hehe.
+            </p>
+            <p>
+                Fun fact: The favicon and the logo you see on the home page is a ginkgo leaf which I designed using Resprite! 
+                Ginkgo trees are known as "living fossils" of trees due to their long lifespan and incredible ability to survive extreme conditions.
+                They symbolize hope, strength, endurance, resilience, and longevity.
             </p>
         </div>
     );
