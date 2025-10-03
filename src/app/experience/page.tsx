@@ -1,8 +1,8 @@
-import { createMetadata } from "@/_utils/metadata";
-import { experience } from "@/_utils/experience";
-import Title from "@/_components/title";
-import Timeline from "@/_components/timeline";
-import ExperienceCard from "@/_components/experience-card";
+import { createMetadata } from "@/constants/metadata";
+import { experience } from "@/constants/experience";
+import Title from "@/components/title";
+import Timeline from "@/components/timeline";
+import ExperienceCard from "@/components/experience-card";
 
 export const metadata = createMetadata({
     title: "Anna Zheng | Experience",

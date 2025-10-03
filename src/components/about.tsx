@@ -1,7 +1,7 @@
 "use client";
 
-import { ucf } from "@/_utils/constants";
-import Hyperlink from "./hyperlink";
+import { ucf } from "@/constants/constants";
+import Hyperlink from "../components/hyperlink";
 
 export default function About() {
     return (

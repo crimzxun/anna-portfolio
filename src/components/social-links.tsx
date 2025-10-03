@@ -1,6 +1,6 @@
 "use client";
 
-import { resolveIcon } from "@/_utils/icon-resolver";
+import { resolveIcon } from "@/constants/icon-resolver";
 
 type SocialIconProps = {
     href: string;

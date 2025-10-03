@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { navLinks } from "@/_utils/constants";
+import { navLinks } from "@/constants/constants";
 
 type NavLinksProps = {
     onClick?: () => void;
@@ -34,7 +34,7 @@ export default function Navbar() {
         <header className="p-5">
             {/* desktop nav */}
             <nav id="desktop-nav" className="font-pixel flex justify-between items-center px-6">
-                <Link href="/" className="font-bold text-4xl xl:text-5xl transition duration-300 hover:text-sky-200 hover:scale-110">
+                <Link href="/" className="font-bold text-4xl xl:text-5xl transition duration-300 hover:text-sky-300 hover:scale-110">
                     Anna Zheng
                 </Link>
                 <ul className="hidden md:flex lg:space-x-6">
@@ -46,26 +46,26 @@ export default function Navbar() {
                     <div className="flex justify-end">
                         <button
                             onClick={() => setOpen(!open)}
-                            className={`flex flex-col justify-between w-10 h-9 p-2 border border-white rounded-lg transition-all duration-300 cursor-pointer ${
-                                open ? "bg-black" : ""
+                            className={`flex flex-col justify-between w-10 h-9 p-2 border rounded-lg transition-all duration-300 cursor-pointer ${
+                                open ? "" : ""
                             }`}
                         >
                             {/* top hamburger line */}
-                            <span className={`block h-0.5 w-full bg-white transition-transform duration-300 ${
+                            <span className={`block h-0.5 w-full bg-[var(--color-foreground)] transition-transform duration-300 ${
                                 open ? "rotate-45 translate-y-2" : ""
                             }`}></span>
                             {/* mid hamburger line */}
-                            <span className={`block h-0.5 w-full bg-white transition-opacity duration-300 ${
+                            <span className={`block h-0.5 w-full bg-[var(--color-foreground)] transition-opacity duration-300 ${
                                 open ? "opacity-0" : "opacity-100"
                             }`}></span>
                             {/* bottom hamburger line */}
-                            <span className={`block h-0.5 w-full bg-white transition-transform duration-300 ${
+                            <span className={`block h-0.5 w-full bg-[var(--color-foreground)] transition-transform duration-300 ${
                                 open ? "-rotate-45 -translate-y-2" : ""
                             }`}></span>
                         </button>
                     </div>
                     <ul className={`absolute right-4 mt-2 p-1 w-48 rounded-2xl overflow-hidden transition-[max-height] duration-300 ${
-                        open ? "border-4 max-h-96 z-50 dark:bg-[var(--background)]" : "border-0 max-h-0"
+                        open ? "border-4 max-h-96 z-50 bg-[var(--color-background)]" : "border-0 max-h-0"
                     }`}>
                         <NavLinks onClick={() => setOpen(false)} />
                     </ul>

@@ -3,8 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import { ReactTyped } from "react-typed";
-import { roles, socialLinks } from "@/_utils/constants";
-import SocialLinks from "@/_components/social-links";
+import { roles, socialLinks } from "@/constants/constants";
+import SocialLinks from "@/components/social-links";
 
 export default function Home() {
   return (

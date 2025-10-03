@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 import { LuCalendarDays, LuChevronDown, LuMapPin } from "react-icons/lu";
 import { AnimatePresence, motion } from "framer-motion";
-import { ExperienceData } from "@/_utils/experience";
-import { iconMap } from "@/_utils/constants";
-import { resolveIcon } from "@/_utils/icon-resolver";
+import { ExperienceData } from "@/constants/experience";
+import { iconMap } from "@/constants/constants";
+import { resolveIcon } from "@/constants/icon-resolver";
 
 type ExperienceCardProps = {
     experience: ExperienceData;

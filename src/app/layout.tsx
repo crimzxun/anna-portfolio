@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Pixelify_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/_components/navbar";
-import Footer from "@/_components/footer";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -70,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       {/* 
         - min-h-screen: at least viewport height 
         - flex flex-col: stack navbar/main/footer vertically 
@@ -78,14 +79,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased min-h-screen flex flex-col`}
       >
-        <Navbar />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
 
-        {/*
-          - flex-grow: expand to fill the remaining space between navbar + footer
-        */}
-        <main className="flex-grow">{children}</main>
-        
-        <Footer />
+          {/*
+            - flex-grow: expand to fill the remaining space between navbar + footer
+          */}
+          <main className="flex-grow">{children}</main>
+          
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

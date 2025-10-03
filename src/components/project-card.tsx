@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ProjectData } from "@/_utils/projects";
-import { iconMap } from "@/_utils/constants";
-import { resolveIcon } from "@/_utils/icon-resolver";
+import { ProjectData } from "@/constants/projects";
+import { iconMap } from "@/constants/constants";
+import { resolveIcon } from "@/constants/icon-resolver";
 
 type ProjectCardProps = {
     project: ProjectData;

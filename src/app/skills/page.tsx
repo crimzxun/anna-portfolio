@@ -1,7 +1,7 @@
-import { createMetadata } from "@/_utils/metadata";
-import { languages, frameworkslibs, tools, certs } from "@/_utils/constants";
-import Title from "@/_components/title";
-import SkillCard from "@/_components/skill-card";
+import { createMetadata } from "@/constants/metadata";
+import { languages, frameworkslibs, tools, certs } from "@/constants/constants";
+import Title from "@/components/title";
+import SkillCard from "@/components/skill-card";
 
 export const metadata = createMetadata({
     title: "Anna Zheng | Skills",

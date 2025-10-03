@@ -1,7 +1,7 @@
-import { createMetadata } from "@/_utils/metadata";
-import { projects } from "@/_utils/projects";
-import Title from "@/_components/title";
-import ProjectCard from "@/_components/project-card";
+import { createMetadata } from "@/constants/metadata";
+import { projects } from "@/constants/projects";
+import Title from "@/components/title";
+import ProjectCard from "@/components/project-card";
 
 export const metadata = createMetadata({
     title: "Anna Zheng | Projects",

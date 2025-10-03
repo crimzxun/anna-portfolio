@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SkillItem } from "@/_utils/constants";
-import { categoryStyles } from "@/_utils/constants";
-import { resolveIcon } from "@/_utils/icon-resolver";
+import { SkillItem } from "@/constants/constants";
+import { categoryStyles } from "@/constants/constants";
+import { resolveIcon } from "@/constants/icon-resolver";
 
 export type SkillCardProps = {
     category: "languages" | "frameworkslibs" | "tools" | "certs";

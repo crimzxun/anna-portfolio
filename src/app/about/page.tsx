@@ -1,7 +1,7 @@
-import { createMetadata } from "@/_utils/metadata";
-import Title from "@/_components/title";
-import About from "@/_components/about";
-import CatAscii from "@/_components/cat-ascii";
+import { createMetadata } from "@/constants/metadata";
+import Title from "@/components/title";
+import About from "@/components/about";
+import CatAscii from "@/components/cat-ascii";
 
 export const metadata = createMetadata({
     title: "Anna Zheng | About",
