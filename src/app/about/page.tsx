@@ -15,7 +15,7 @@ export default function AboutPage() {
             <section>
                 <Title mini="GET TO KNOW MORE" heading="about-me ☕︎" />
                 <About />
-                <CatAscii />
+                {/* <CatAscii /> */}
             </section>
         </div>
     );

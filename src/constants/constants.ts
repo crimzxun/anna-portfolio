@@ -18,6 +18,18 @@ export const ucf = {
     label: "UCF",
 };
 
+export const ginkgo = {
+    href: "",
+    label: "ginkgo leaf",
+    tooltip: {
+        desc: "Ginkgo trees are known as \"living fossils\" of trees due to their long lifespan and incredible ability to survive extreme conditions.",
+        url: "/ginkgo.jpg",
+        alt: "Ginkgo Tree",
+        width: 270,
+        height: 180,
+    },
+}
+
 export const iconMap = {
     discord: "rx:RxDiscordLogo",
     github: "fi:FiGithub",
