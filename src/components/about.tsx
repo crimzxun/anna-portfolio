@@ -31,7 +31,7 @@ export default function About() {
             </p>
             <p>
                 Outside of coding, I enjoy drawing, reading, playing badminton/volleyball, playing games and listening to music (atm, RnB and indie). 
-                I'm always down to exploring and trying new things! Currently, I&apos;m trying to learn to crochet and studying for my GRE hehe.
+                I&apos;m always down to exploring and trying new things! Currently, I&apos;m trying to learn to crochet and studying for my GRE hehe.
             </p>
             <p>
                 Fun fact! The favicon/logo for this website is a{" "} 

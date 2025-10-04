@@ -1,7 +1,6 @@
 import { createMetadata } from "@/constants/metadata";
 import Title from "@/components/title";
 import About from "@/components/about";
-import CatAscii from "@/components/cat-ascii";
 
 export const metadata = createMetadata({
     title: "Anna Zheng | About",
@@ -15,7 +14,6 @@ export default function AboutPage() {
             <section>
                 <Title mini="GET TO KNOW MORE" heading="about-me ☕︎" />
                 <About />
-                {/* <CatAscii /> */}
             </section>
         </div>
     );
