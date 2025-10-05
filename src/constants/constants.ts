@@ -146,6 +146,6 @@ export const footerLinks: { href: string; icon: string; label: string; }[] = [
     { 
         href: "https://www.linkedin.com/in/anna-zhengg/",
         icon: "lu:LuGlobe",
-        label: "Add me on LinkedIn! →",
+        label: "Add me on LinkedIn!",
     },
 ];

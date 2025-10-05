@@ -15,13 +15,16 @@ export default function About() {
                     height={300}
                     className="rounded-xl"
                 />
-                <p className="lg:text-2xl">
-                    Hihi! I&apos;m Anna, a software engineer and a Computer Science student at{" "}
-                    <Hyperlink href={ucf.href} label={ucf.label} />
-                    {" "}with a passion for full-stack development, game development, and machine learning/computer vision. 
-                    I enjoy exploring and learning new technologies and frameworks, currently delving more into computer vision and mobile development. 
-                    I love building projects that combine creativity with technical problem-solving and exploring new ways to solve problems.
-                </p>
+
+                <div className="max-w-5xl mx-auto lg:mx-0">
+                    <p className="lg:text-2xl">
+                        Hihi! I&apos;m Anna, a software engineer and a Computer Science student at{" "}
+                        <Hyperlink href={ucf.href} label={ucf.label} />
+                        {" "}with a passion for full-stack development, game development, and machine learning/computer vision. 
+                        I enjoy exploring and learning new technologies and frameworks, currently delving more into computer vision and mobile development. 
+                        I love building projects that combine creativity with technical problem-solving and exploring new ways to solve problems.
+                    </p>
+                </div>
             </div>
             
             <p>
@@ -30,8 +33,9 @@ export default function About() {
                 I strive to create solutions that connect people and solve real problems abiding with the task theme at hand. 
             </p>
             <p>
-                Outside of coding, I enjoy drawing, reading, playing badminton/volleyball, playing games and listening to music (atm, RnB and indie). 
-                I&apos;m always down to exploring and trying new things! Currently, I&apos;m trying to learn to crochet and studying for my GRE hehe.
+                Outside of coding, I enjoy drawing, reading, badminton, playing games, and listening to all kinds of music (atm, mainly RnB and indie). 
+                I&apos;m always down to exploring and trying new things from snowboarding to hiking to cafe & restaurant hunting! 
+                Currently, I&apos;m trying to learn to crochet and studying for my GRE hehe.
             </p>
             <p>
                 Fun fact! The favicon/logo for this website is a{" "} 

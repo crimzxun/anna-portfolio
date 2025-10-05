@@ -27,20 +27,20 @@ function FooterLink({ href, icon, label}: FooterLinkProps) {
 
 export default function Footer() {
     return (
-        <footer className="relative flex items-center justify-center p-4">
+        <footer className="relative max-w-screen-lg mx-auto">
             <div>
-                <div className="flex gap-[24px] flex-wrap">
+                <div className="flex flex-wrap flex-col items-center justify-center sm:flex-row sm:gap-[24px]">
                     {footerLinks.map((link) => (
                         <FooterLink key={link.label} {...link} />
                     ))}
                 </div>
-                <div className="flex items-center justify-center p-2">
-                    <p className="text-xs">
+                <div className="flex items-center justify-center py-2">
+                    <p className="text-xs text-center">
                         Copyright&#169; 2025 Anna Zheng. All Rights Reserved.
                     </p>
                 </div>
             </div>
-            <div className="fixed bottom-6 right-6">
+            <div className="fixed bottom-6 right-6 z-50">
                 <ThemeToggle />
             </div>
       </footer>
