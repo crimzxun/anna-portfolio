@@ -17,7 +17,7 @@ function NavLinks({ onClick }: NavLinksProps) {
                     <Link
                         href={link.href}
                         onClick={onClick}
-                        className="px-3 py-1 text-xl lg:text-2xl hover:text-sky-300 hover:underline underline-offset-4 hover:scale-105 transition-transform duration-200 hover:drop-shadow-[0_0_5px_rgba(116,212,255,0.6)]"
+                        className="inline-block px-3 py-1 text-xl lg:text-2xl hover:text-sky-400 dark:hover:text-sky-300 hover:underline underline-offset-8 hover:scale-110 transition-transform duration-200 hover:drop-shadow-[0_0_10px_rgba(116,212,255,0.6)]"
                     >
                         {link.label.toUpperCase()}
                     </Link>

@@ -16,7 +16,9 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
     const [showMore, setShowMore] = useState(false);
 
     return (
-        <div className="w-full mx-auto p-4 border-2 border-double rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_10px_rgba(255,255,255,0.6),0_0_20px_rgba(255,255,255,0.4)]">
+        <div className="w-full mx-auto p-4 border-2 border-double rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 
+            hover:shadow-[0_0_10px_rgba(0,0,0,0.6),0_0_20px_rgba(0,0,0,0.4)] dark:hover:shadow-[0_0_10px_rgba(255,255,255,0.6),0_0_20px_rgba(255,255,255,0.4)]"
+        >
             {/* logo left, position + company right */}
             <div className="flex items-center gap-4">
                 <div>
@@ -54,7 +56,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                         key={idx}
                         className="flex items-center px-2 py-1 border rounded-lg text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(0,188,255,0.8)]"
                     >
-                        <span className="transition hover:scale-115 hover:text-sky-300">
+                        <span className="transition hover:scale-115 hover:text-sky-400 dark:hover:text-sky-300">
                             {skill}
                         </span>
                     </div>

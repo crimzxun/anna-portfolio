@@ -39,7 +39,18 @@ export default function About() {
             </p>
             <p>
                 Fun fact! The favicon/logo for this website is a{" "} 
-                <Hyperlink href={ginkgo.href} label={ginkgo.label} tooltip={{desc:ginkgo.tooltip.desc, url:ginkgo.tooltip.url, alt:ginkgo.tooltip.alt, width:ginkgo.tooltip.width, height:ginkgo.tooltip.height, className:"flex flex-col"}} />
+                <Hyperlink 
+                    href={ginkgo.href} 
+                    label={ginkgo.label} 
+                    tooltip={{
+                        desc:ginkgo.tooltip.desc, 
+                        url:ginkgo.tooltip.url, 
+                        alt:ginkgo.tooltip.alt, 
+                        width:ginkgo.tooltip.width, 
+                        height:ginkgo.tooltip.height, 
+                        className:"flex flex-col"
+                    }} 
+                />
                 {" "}I designed using Resprite! 
             </p>
         </div>

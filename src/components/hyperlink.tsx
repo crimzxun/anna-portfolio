@@ -33,7 +33,7 @@ export default function Hyperlink({ href, label, tooltip }: Link) {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block font-semibold text-sky-300 underline underline-offset-6 transition-transform duration-300 ease-in-out hover:scale-110 origin-center"
+                className="inline-block font-semibold text-sky-400 dark:text-sky-300 underline underline-offset-6 transition-transform duration-300 ease-in-out hover:scale-110 origin-center"
             >
                 {label}
             </a>
