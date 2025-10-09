@@ -64,7 +64,7 @@ export default function Navbar() {
                             }`}></span>
                         </button>
                     </div>
-                    <ul className={`absolute right-4 mt-2 p-1 w-48 rounded-2xl overflow-hidden transition-[max-height] duration-300 ${
+                    <ul className={`absolute right-4 mt-2 p-1 w-48 rounded-2xl overflow-hidden ${
                         open ? "border-4 max-h-96 z-50 bg-[var(--color-background)]" : "border-0 max-h-0"
                     }`}>
                         <NavLinks onClick={() => setOpen(false)} />

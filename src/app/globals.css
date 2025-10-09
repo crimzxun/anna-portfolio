@@ -129,15 +129,11 @@
   animation: typing 10s steps(30) infinite; /* steps= num of chars */
 }
 
-body {
-  @apply bg-background text-foreground font-pixel
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-pixel;
   }
 }
