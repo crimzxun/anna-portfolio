@@ -355,7 +355,7 @@ export const projects: ProjectData[] = [
         id: "3dplatformer",
         title: "3D Platformer",
         period: "November 2023 - December 2023",
-        description: "First game project! A 3D platformer game where player collect as many gifts as they can within a time limit using Python Pygame/OpenGL, rendering 3D objects and implementing character movements, camera rotation, shadows, and collisions.",
+        description: "First game project! No game engine used. A 3D platformer game where player collect as many gifts as they can within a time limit using Python Pygame/OpenGL, rendering 3D objects and implementing character movements, camera rotation, shadows, and collisions.",
         image: [
             {
                 src: "/projects/3dplatformer.png",
