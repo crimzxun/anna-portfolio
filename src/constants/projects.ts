@@ -391,6 +391,30 @@ export const projects: ProjectData[] = [
                 label: "Critter Hunt Login",
             },
             {
+                src: "/projects/critterhunt-signup.png",
+                label: "Critter Hunt Signup",
+            },
+            {
+                src: "/projects/critterhunt-mobile-login.png",
+                label: "Critter Hunt Mobile Login",
+            },
+            {
+                src: "/projects/critterhunt-mobile-map.jpg",
+                label: "Critter Hunt Mobile Map",
+            },
+            {
+                src: "/projects/critterhunt-mobile-details.jpg",
+                label: "Critter Hunt Mobile Details",
+            },
+            {
+                src: "/projects/critterhunt-mobile-profile.png",
+                label: "Critter Hunt Mobile Profile",
+            },
+            {
+                src: "/projects/critterhunt-mobile-leaderboard.jpg",
+                label: "Critter Hunt Mobile Leaderboard",
+            },
+            {
                 src: "/projects/critterhunt-seqmodel.png",
                 label: "Critter Hunt Sequence Model",
             },
@@ -401,6 +425,10 @@ export const projects: ProjectData[] = [
             {
                 src: "/projects/critterhunt-classmodel.png",
                 label: "Critter Hunt Class Model",
+            },
+            {
+                src: "/projects/critterhunt.png",
+                label: "Critter Hunt Login",
             },
         ],
         skills: [
