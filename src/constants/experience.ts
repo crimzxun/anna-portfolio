@@ -124,12 +124,15 @@ export const experience: ExperienceData[] = [
         ],
         skills: [
             "Student Support",
-            "Professor Assistant",
+            "Teaching Assistance",
             "Communication",
             "Adaptability",
             "Interpersonal Skills",
             "Problem-solving",
             "Computer Science",
+            "C",
+            "Java",
+            "Python",
         ],
         links: [
             {
