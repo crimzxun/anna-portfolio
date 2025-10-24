@@ -19,7 +19,10 @@ export default function About() {
                 <div className="max-w-5xl mx-auto lg:mx-0">
                     <p className="lg:text-2xl">
                         Hihi! I&apos;m Anna, a software engineer and a Computer Science student at{" "}
-                        <Hyperlink href={ucf.href} label={ucf.label} />
+                        <Hyperlink 
+                            href={ucf.href}
+                            label={ucf.label}
+                        />
                         {" "}with a passion for full-stack development, game development, and machine learning/computer vision. 
                         I enjoy exploring and learning new technologies and frameworks, currently delving more into computer vision and mobile development. 
                         I love building projects that combine creativity with technical problem-solving and exploring new ways to solve problems.

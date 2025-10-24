@@ -21,7 +21,7 @@ export type ExperienceData = {
 export const experience: ExperienceData[] = [
     {
         id: "shpeucf",
-        title: "Software Engineer Intern",
+        title: "Software Engineer",
         company: "Society of Hispanic Professional Engineers (SHPE) UCF",
         period: "February 2025 - Present",
         location: "Orlando, FL",
