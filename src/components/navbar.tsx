@@ -34,7 +34,7 @@ export default function Navbar() {
         <header className="p-5">
             {/* desktop nav */}
             <nav id="desktop-nav" className="font-pixel flex justify-between items-center px-6">
-                <Link href="/" className="font-bold text-4xl xl:text-5xl transition duration-300 hover:text-sky-300 hover:scale-110">
+                <Link href="/" className="font-bold text-4xl transition duration-300 hover:text-sky-300 hover:scale-110">
                     Anna Zheng
                 </Link>
                 <ul className="hidden md:flex lg:space-x-6">

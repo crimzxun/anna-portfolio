@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Pixelify_Sans } from "next/font/google";
+import { Nunito_Sans, Pixelify_Sans} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "next-themes";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const pixelifySans = Pixelify_Sans({
   variable: "--font-pixelify-sans",
+  subsets: ["latin"],
+});
+
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
 });
 
@@ -77,7 +72,7 @@ export default function RootLayout({
         - flex flex-col: stack navbar/main/footer vertically 
       */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${pixelifySans.variable} antialiased min-h-screen flex flex-col`}
+        className={`${pixelifySans.variable} ${nunitoSans.variable} antialiased min-h-screen flex flex-col`}
       >
         <ThemeProvider
           attribute="class"

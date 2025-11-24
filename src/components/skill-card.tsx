@@ -17,7 +17,7 @@ export default function SkillCard({ category, label, items }: SkillCardProps) {
        <motion.div
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.2 }}
-            className="w-full max-w-5xl p-4 border-2 border-double rounded-2xl transition-all duration-300 hover:scale-105 
+            className="w-full max-w-5xl p-4 border-2 rounded-2xl transition-all duration-300 hover:scale-105 
                 hover:shadow-[0_0_10px_rgba(0,0,0,0.6),0_0_20px_rgba(0,0,0,0.4)] dark:hover:shadow-[0_0_10px_rgba(255,255,255,0.6),0_0_20px_rgba(255,255,255,0.4)]"
        >
             <h2 className={`text-xl font-semibold mb-4 ${categoryClass}`}>

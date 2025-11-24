@@ -31,7 +31,7 @@ export default function Timeline<T>({ items, Card }: TimelineProps<T>) {
     return (
         <div className="relative mt-8">
             {/* vertical timeline */}
-            <div className="absolute left-6 top-0 h-full w-1 border rounded-full" />
+            <div className="absolute left-6 top-0 h-full w-1 border-2 rounded-full" />
 
             <div className="flex flex-col gap-8">
                 {items.map((item, idx) => (

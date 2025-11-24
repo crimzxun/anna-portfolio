@@ -40,7 +40,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     }, [currentIndex, project.image]);
 
     return (
-        <div className="w-full max-w-md mx-auto p-4 border-2 border-double rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 
+        <div className="w-full max-w-md mx-auto p-4 border-2 rounded-2xl flex flex-col gap-4 transition-transform duration-300 hover:scale-105 
             hover:shadow-[0_0_10px_rgba(0,0,0,0.6),0_0_20px_rgba(0,0,0,0.4)] dark:hover:shadow-[0_0_10px_rgba(255,255,255,0.6),0_0_20px_rgba(255,255,255,0.4)]"
         >
             <div className="flex flex-col gap-4">
@@ -98,13 +98,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 <h2 className="text-2xl font-semibold">
                     {project.title}
                 </h2>
-                <p className="text-sm">
+                <p className="font-nunito text-sm">
                     {project.period}
                 </p>
             </div>
 
             {/* description */}
-            <p className="leading-relaxed">
+            <p className="font-nunito">
                 {project.description}
             </p>
 
@@ -113,7 +113,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {project.skills.map((skill, idx) => (
                     <div
                         key={idx}
-                        className="flex items-center px-2 py-1 border rounded-lg text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(116,212,255,0.8)]"
+                        className="flex items-center px-2 py-1 border border-zinc-500 rounded-lg font-nunito text-xs transition-transform duration-300 hover:scale-110 hover:shadow-[0_0_10px_rgba(116,212,255,0.8)]"
                     >
                         <span className="transition hover:scale-115 hover:text-sky-400 dark:hover:text-sky-300">
                             {skill}

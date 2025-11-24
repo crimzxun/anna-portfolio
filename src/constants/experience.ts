@@ -23,7 +23,7 @@ export const experience: ExperienceData[] = [
         id: "shpeucf",
         title: "Software Engineer",
         company: "Society of Hispanic Professional Engineers (SHPE) UCF",
-        period: "February 2025 - Present",
+        period: "February 2025 - August 2025",
         location: "Orlando, FL",
         logo: {
             src: "/logos/shpe_ucf_logo.jpeg",
@@ -31,9 +31,10 @@ export const experience: ExperienceData[] = [
         },
         description: "Developed new SHPE UCF’s official website using the T3 stack, enhancing accessibility and streamlining operations for members and officers.",
         responsibilities: [
-            "Built core responsive UI features for SHPE UCF’s new official website using the T3 stack (Next.js, Tailwind CSS, tRPC, Supabase, Drizzle ORM), supporting 100+ members and officers.",
-            "Implemented sponsorship and donation system with Square API, enabling secure online payments and streamlining fundraising workflows.",
-            "Developed member profile system using Supabase, Resend and Square APIs and enhanced shop management features including item creation and editing.",
+            "Built core responsive UI/UX features for SHPE UCF’s upcoming official website using the T3 stack (Next.js, TypeScript, Tailwind CSS, tRPC, Supabase, Drizzle ORM) to serve 300+ members and officers.",
+            "Implemented sponsorship and donation system using Square Catalog and Payments APIs, eliminating reliance on external payment links.",
+            "Enhanced shop management features from item creation to editing using Square Catalog and Inventory APIs with tRPC, enabling officers to update inventory, pricing, and product details.",
+            "Developed a user profile system using Supabase, Resend, and Square Order APIs, allowing users to manage profiles, update resumes, track purchases, join membership, and reset passwords.",
         ],
         skills: [
             "Next.js",
@@ -81,7 +82,7 @@ export const experience: ExperienceData[] = [
         responsibilities: [
             "Co-developed a high-fidelity Unity/C# tactical communications training simulation in support of DoD, enabling operators to practice configuring radios, maintaining connectivity, and countering electronic warfare threats.",
             "Built immersive 3D environments (open field, rural, urban) with dynamic weather effects (rain, fog) and ambient audio to simulate real-world communication challenges.",
-            "Developed the AN/PRC-148 MBITR tactical radio emulator UI, implementing realistic battery drain, charging, and button functionality to mirror actual device behavior.",
+            "Developed the UI/UX for the AN/PRC-148 MBITR tactical radio emulator, integrating realistic battery drain, charging, and button interactions to replicate actual device behavior.",
         ],
         skills: [
             "Unity",
@@ -117,9 +118,9 @@ export const experience: ExperienceData[] = [
         },
         description: "Served as an ULA in the UCF College of Engineering & Computer Science, assisting professors and providing academic support and guidance to students in selected undergraduate courses.",
         responsibilities: [
-            "Guided 200+ students across 4 core computer science courses and multiple semesters by assisting with debugging, providing strategic problem-solving guidance and optimization, and reinforcing core programming concepts.",
-            "Organized and taught weekly lab sessions of 30+ students to introduce new programming topics, deliver live coding demonstrations, and reinforce lecture material through visual illustrations and step-by-step coding techniques.",
-            "Held weekly office hours (in-person and virtual via Zoom, with additional support via Discord and email) to address technical questions, clarify complex topics, and provide individualized academic support.",
+            "Guided 200+ students across 4 core computer science courses by assisting with debugging, providing strategic problem-solving guidance and optimization, and reinforcing core programming concepts.",
+            "Organized and taught weekly lab sessions of 30+ students, introducing new programming topics and reinforcing lectures through live coding, visual illustrations, and step-by-step explanations in a collaborative environment.",
+            "Held weekly office hours (in-person and virtual via Zoom, with additional support via Discord and email) to address technical questions, clarify complex topics, and provide 1-on-1 academic support.",
             "Led review sessions via Zoom and proctored exams/quizzes in ensuring academic integrity and smooth exam administration.",
         ],
         skills: [
