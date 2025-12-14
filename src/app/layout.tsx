@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/next";
 import { Nunito_Sans, Pixelify_Sans} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { ThemeProvider } from "next-themes";
+
 
 const pixelifySans = Pixelify_Sans({
   variable: "--font-pixelify-sans",
@@ -89,6 +91,7 @@ export default function RootLayout({
           
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
